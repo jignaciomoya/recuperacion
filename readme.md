@@ -70,4 +70,4 @@ Ver la lista de contactos ordenados alfabéticamente.
 
 ## WARNING
 - No uses ninguna IA para hacerlo. 
-- Si úsala como consulta, pero no para que haga el código.
+- Sí puedes usarla como consulta, pero no para que haga el código.
