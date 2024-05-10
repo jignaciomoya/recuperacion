@@ -60,6 +60,8 @@ Puedes crear más archivos o carpetas tanto en el front como en el back si lo ve
 - Actualizar información de un contacto.
 - Eliminar un contacto.
 
+No está demás decir que le añadas CSS para que tenga un aspecto profesional
+
 ## BONUS
 
 Ver la lista de contactos ordenados alfabéticamente. 
