@@ -1,3 +1,5 @@
+BACKEND
+
 1. installed express
 >> npm i express
 
@@ -34,16 +36,48 @@ first example
     "__v": 0
 }
 
-10. create GET all products
+10. Create GET all products
 >> /api/products
 
-11. create GET product by id
+11. Create GET product by id
 >> /api/product/:id
 
-12. create PUT update by id
+12. Create PUT update by id
 >> api/product/:id
 
-13. created DELETE product. Added logic delete because I am lazy
+13. Created DELETE product. Added logic delete because I am lazy
 >> api/product/:id
 
-14. Create routes
+14. Created routes
+
+15. Created Controller
+
+
+FRONTEND
+
+1. npm create vite@latest frontend --template react
+>> √ Select a framework: » React
+>> √ Select a variant: » JavaScript + SWC
+
+2. Go to the directory
+>>  cd frontend
+>>  npm install
+>>  npm run dev
+
+3. intall react router dom
+>> npm install react-router-dom
+
+4. created react-router-dom example
+
+5. created CreateForm
+>> added some random styles from App.css
+
+6. created HeaderContainer
+
+7. Testing create product
+
+8. Created Component Card
+
+9. Created UpdateForm
+
+10. added some randoms styles

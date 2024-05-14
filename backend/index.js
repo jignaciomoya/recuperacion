@@ -9,6 +9,22 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.json());
 
+// code from internet fuck corse.
+app.use(function (req, res, next) {
+
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    next();
+});
+
+
 const URI = "mongodb+srv://joseignaciomoyajim:QcnKYNdX5TTp5mFZ@cluster0.ykdkprv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 //route

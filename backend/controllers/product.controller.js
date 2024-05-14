@@ -2,7 +2,10 @@ const Product = require('../models/product.model');
 
 const getAllProduct = async (req, res) => {
     try {
-        const products = await Product.find({});
+        const products = await Product.find({
+            isDeleted: false,
+        });
+        console.log(products);
         res.status(200).json(products);
     } catch (err) {
         console.log(err);
@@ -19,7 +22,7 @@ const getProductById = async (req, res) => {
     }
 };
 
-const addById = async (req, res) => {
+const addProduct = async (req, res) => {
     console.log({body: req});
     
     try {
@@ -71,7 +74,7 @@ const deleteById = async (req, res) => {
 module.exports = {
     getAllProduct,
     getProductById,
-    addById,
+    addProduct,
     updateById,
     deleteById
 };

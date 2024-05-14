@@ -1,13 +1,17 @@
 const express = require('express');
-const Product = require('../models/product.model.js');
 const router = express.Router();
 const productController = require('../controllers/product.controller.js');
 
-router.get('/all', productController.getAllProduct);
+router.get('/all', (req,res) => {
+    console.log("entro en all?");
+
+    productController.getAllProduct(req,res)
+
+});
 
 router.get('/:id', productController.getProductById);
 
-router.post('/', productController.addById);
+router.post('/', productController.addProduct);
 
 router.put('/:id', productController.updateById);
 
