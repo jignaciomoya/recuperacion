@@ -17,7 +17,7 @@ function App() {
         <Route path="/update/:name/:email/:phone_number/:id" element={<UpdateFormComponent />} />
         <Route path="/main" element={<MainPage />} />
         
-        <Route path="*" element={<div>Page not found, sowy</div>} />
+        <Route path="*" element={<div>Page not found, sorry</div>} />
       </Routes>
     </BrowserRouter>
   );

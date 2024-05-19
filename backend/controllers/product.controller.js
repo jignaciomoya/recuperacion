@@ -46,7 +46,7 @@ const updateById = async (req, res) => {
             res.status(404).json({ message: 'Product not found' });
         }
 
-        //so I need to find it againt
+        //so I need to find it against
         const updatedProduct = await Product.findById(id);
 
         res.status(200).json(updatedProduct);

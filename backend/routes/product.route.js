@@ -2,12 +2,7 @@ const express = require('express');
 const router = express.Router();
 const productController = require('../controllers/product.controller.js');
 
-router.get('/all', (req,res) => {
-    console.log("entro en all?");
-
-    productController.getAllProduct(req,res)
-
-});
+router.get('/all', productController.getAllProduct);
 
 router.get('/:id', productController.getProductById);
 

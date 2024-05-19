@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose');
-const Product = require('./models/product.model.js');
 const app = express();
 const productRouter = require('./routes/product.route.js');
 
@@ -9,16 +8,10 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.json());
 
-// code from internet fuck corse.
+// Middleware against CORS.
 app.use(function (req, res, next) {
-
-    // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
-
-    // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-    // Request headers you wish to allow
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
     next();
